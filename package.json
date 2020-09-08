@@ -1,0 +1,40 @@
+{
+  "name": "grpc-web-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@grpc/grpc-js": "~1.0.5",
+    "@grpc/proto-loader": "^0.3.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "async": "^1.5.2",
+    "google-protobuf": "^3.13.0",
+    "grpc-web": "^1.2.0",
+    "lodash": "^4.6.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
