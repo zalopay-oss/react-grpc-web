@@ -1,5 +1,5 @@
-import { GreeterClient } from '../rpc/helloworld_grpc_web_pb.js';
-import { HelloRequest, RepeatHelloRequest } from '../rpc/helloworld_pb.js';
+import { GreeterClient } from '../grpc/helloworld_grpc_web_pb.js';
+import { HelloRequest, RepeatHelloRequest } from '../grpc/helloworld_pb.js';
 
 const URL = "http://" + window.location.hostname + ":8080";
 const client = new GreeterClient(URL, null, null);

@@ -1,4 +1,4 @@
-var PROTO_PATH = __dirname + "/helloworld.proto";
+var PROTO_PATH = "./protos/helloworld.proto";
 
 var assert = require("assert");
 var async = require("async");

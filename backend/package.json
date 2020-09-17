@@ -1,0 +1,12 @@
+{
+  "name": "grpc-web-react-backend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "async": "^1.5.2",
+    "@grpc/grpc-js": "~1.0.5",
+    "@grpc/proto-loader": "^0.3.0",
+    "google-protobuf": "^3.13.0",
+    "lodash": "^4.6.1"
+  }
+}
