@@ -12,23 +12,27 @@ This is a demo for using gRPC-Web with the React app. This application is built 
 
 ### Prerequisites
 
-- You need to install [Docker](https://www.docker.com/get-started) in order to run the application.
+- You need to install [Docker](https://www.docker.com/get-started) in order to run the application
 
 ### Installing
 
-- Clone this repo from **[https://github.com/ozuit/react-grpc-web.git](https://github.com/ozuit/react-grpc-web.git)**
+- Clone this repository
 
 ### Usage
 
 - Application has been wrapped by Docker so you need only run below command in terminal:
 
 ```bash
-./scripts/start.sh
+docker-compose up -d
 ```
 
-## Document
+- Access to url http://localhost:3000 to view app running
 
-Get more information at [wiki](https://github.com/ozuit/react-grpc-web/wiki)
+- Run below command to stop application:
+
+```bash
+docker-compose down -v
+```
 
 ## Support
 
@@ -37,7 +41,7 @@ Get more information at [wiki](https://github.com/ozuit/react-grpc-web/wiki)
 - You can try to modify proto file and re-generated stub client with grpc-web by run following command:
   
 ```bash
-./scripts/render.sh
+./scripts/build.sh
 ```
 
 ## Authors
