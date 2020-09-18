@@ -1,16 +1,17 @@
-FROM node:12
+FROM mhart/alpine-node:12
+
+ENV PORT 9090
 
 # Create app directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-# Install app dependencies
+# Installing dependencies
 COPY package*.json /usr/src/app/
-RUN npm install
+RUN yarn install --silent
 
-# Bundle app source
+# Copying source files
 COPY . /usr/src/app
 
 # Running the app
-EXPOSE 9090
-CMD ["node", "server.js"]
+CMD "yarn" "start"

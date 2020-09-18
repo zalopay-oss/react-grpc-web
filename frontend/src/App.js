@@ -15,7 +15,6 @@ const App = () => {
 
   useEffect(() => {
     console.log("Start streaming");
-    const [hello, name] = content.split(" ");
     // streaming call
     const stream = greeterApi.sayRepeatHello({ name, count: 5 });
     stream.on("data", (response) => {

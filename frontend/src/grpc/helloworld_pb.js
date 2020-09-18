@@ -7,6 +7,7 @@
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -25,7 +26,7 @@ goog.exportSymbol('proto.helloworld.RepeatHelloRequest', null, global);
  * @extends {jspb.Message}
  * @constructor
  */
-proto.helloworld.HelloRequest = function(opt_data) {
+proto.helloworld.HelloRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.helloworld.HelloRequest, jspb.Message);
@@ -46,7 +47,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.helloworld.HelloReply = function(opt_data) {
+proto.helloworld.HelloReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.helloworld.HelloReply, jspb.Message);
@@ -67,7 +68,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.helloworld.RepeatHelloRequest = function(opt_data) {
+proto.helloworld.RepeatHelloRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.helloworld.RepeatHelloRequest, jspb.Message);
@@ -82,42 +83,42 @@ if (goog.DEBUG && !COMPILED) {
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.helloworld.HelloRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.helloworld.HelloRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.helloworld.HelloRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.helloworld.HelloRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    name: jspb.Message.getFieldWithDefault(msg, 1, "")
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.helloworld.HelloRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.helloworld.HelloRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
+
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.helloworld.HelloRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.helloworld.HelloRequest.toObject = function (includeInstance, msg) {
+    var f, obj = {
+      name: jspb.Message.getFieldWithDefault(msg, 1, "")
+    };
+
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
 }
 
 
@@ -126,7 +127,7 @@ proto.helloworld.HelloRequest.toObject = function(includeInstance, msg) {
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.helloworld.HelloRequest}
  */
-proto.helloworld.HelloRequest.deserializeBinary = function(bytes) {
+proto.helloworld.HelloRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
   var msg = new proto.helloworld.HelloRequest;
   return proto.helloworld.HelloRequest.deserializeBinaryFromReader(msg, reader);
@@ -140,20 +141,20 @@ proto.helloworld.HelloRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.helloworld.HelloRequest}
  */
-proto.helloworld.HelloRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.helloworld.HelloRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setName(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setName(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
@@ -164,7 +165,7 @@ proto.helloworld.HelloRequest.deserializeBinaryFromReader = function(msg, reader
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.helloworld.HelloRequest.prototype.serializeBinary = function() {
+proto.helloworld.HelloRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.helloworld.HelloRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
@@ -178,7 +179,7 @@ proto.helloworld.HelloRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.helloworld.HelloRequest.serializeBinaryToWriter = function(message, writer) {
+proto.helloworld.HelloRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getName();
   if (f.length > 0) {
@@ -194,7 +195,7 @@ proto.helloworld.HelloRequest.serializeBinaryToWriter = function(message, writer
  * optional string name = 1;
  * @return {string}
  */
-proto.helloworld.HelloRequest.prototype.getName = function() {
+proto.helloworld.HelloRequest.prototype.getName = function () {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
@@ -203,7 +204,7 @@ proto.helloworld.HelloRequest.prototype.getName = function() {
  * @param {string} value
  * @return {!proto.helloworld.HelloRequest} returns this
  */
-proto.helloworld.HelloRequest.prototype.setName = function(value) {
+proto.helloworld.HelloRequest.prototype.setName = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
@@ -212,42 +213,42 @@ proto.helloworld.HelloRequest.prototype.setName = function(value) {
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.helloworld.HelloReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.helloworld.HelloReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.helloworld.HelloReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.helloworld.HelloReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    message: jspb.Message.getFieldWithDefault(msg, 1, "")
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.helloworld.HelloReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.helloworld.HelloReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
+
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.helloworld.HelloReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.helloworld.HelloReply.toObject = function (includeInstance, msg) {
+    var f, obj = {
+      message: jspb.Message.getFieldWithDefault(msg, 1, "")
+    };
+
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
 }
 
 
@@ -256,7 +257,7 @@ proto.helloworld.HelloReply.toObject = function(includeInstance, msg) {
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.helloworld.HelloReply}
  */
-proto.helloworld.HelloReply.deserializeBinary = function(bytes) {
+proto.helloworld.HelloReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
   var msg = new proto.helloworld.HelloReply;
   return proto.helloworld.HelloReply.deserializeBinaryFromReader(msg, reader);
@@ -270,20 +271,20 @@ proto.helloworld.HelloReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.helloworld.HelloReply}
  */
-proto.helloworld.HelloReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.helloworld.HelloReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setMessage(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setMessage(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
@@ -294,7 +295,7 @@ proto.helloworld.HelloReply.deserializeBinaryFromReader = function(msg, reader) 
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.helloworld.HelloReply.prototype.serializeBinary = function() {
+proto.helloworld.HelloReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.helloworld.HelloReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
@@ -308,7 +309,7 @@ proto.helloworld.HelloReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.helloworld.HelloReply.serializeBinaryToWriter = function(message, writer) {
+proto.helloworld.HelloReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getMessage();
   if (f.length > 0) {
@@ -324,7 +325,7 @@ proto.helloworld.HelloReply.serializeBinaryToWriter = function(message, writer) 
  * optional string message = 1;
  * @return {string}
  */
-proto.helloworld.HelloReply.prototype.getMessage = function() {
+proto.helloworld.HelloReply.prototype.getMessage = function () {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
@@ -333,7 +334,7 @@ proto.helloworld.HelloReply.prototype.getMessage = function() {
  * @param {string} value
  * @return {!proto.helloworld.HelloReply} returns this
  */
-proto.helloworld.HelloReply.prototype.setMessage = function(value) {
+proto.helloworld.HelloReply.prototype.setMessage = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
@@ -342,43 +343,43 @@ proto.helloworld.HelloReply.prototype.setMessage = function(value) {
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.helloworld.RepeatHelloRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.helloworld.RepeatHelloRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.helloworld.RepeatHelloRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.helloworld.RepeatHelloRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    name: jspb.Message.getFieldWithDefault(msg, 1, ""),
-    count: jspb.Message.getFieldWithDefault(msg, 2, 0)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.helloworld.RepeatHelloRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.helloworld.RepeatHelloRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
+
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.helloworld.RepeatHelloRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.helloworld.RepeatHelloRequest.toObject = function (includeInstance, msg) {
+    var f, obj = {
+      name: jspb.Message.getFieldWithDefault(msg, 1, ""),
+      count: jspb.Message.getFieldWithDefault(msg, 2, 0)
+    };
+
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
 }
 
 
@@ -387,7 +388,7 @@ proto.helloworld.RepeatHelloRequest.toObject = function(includeInstance, msg) {
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.helloworld.RepeatHelloRequest}
  */
-proto.helloworld.RepeatHelloRequest.deserializeBinary = function(bytes) {
+proto.helloworld.RepeatHelloRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
   var msg = new proto.helloworld.RepeatHelloRequest;
   return proto.helloworld.RepeatHelloRequest.deserializeBinaryFromReader(msg, reader);
@@ -401,24 +402,24 @@ proto.helloworld.RepeatHelloRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.helloworld.RepeatHelloRequest}
  */
-proto.helloworld.RepeatHelloRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.helloworld.RepeatHelloRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setName(value);
-      break;
-    case 2:
-      var value = /** @type {number} */ (reader.readInt32());
-      msg.setCount(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setName(value);
+        break;
+      case 2:
+        var value = /** @type {number} */ (reader.readInt32());
+        msg.setCount(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
@@ -429,7 +430,7 @@ proto.helloworld.RepeatHelloRequest.deserializeBinaryFromReader = function(msg, 
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.helloworld.RepeatHelloRequest.prototype.serializeBinary = function() {
+proto.helloworld.RepeatHelloRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.helloworld.RepeatHelloRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
@@ -443,7 +444,7 @@ proto.helloworld.RepeatHelloRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.helloworld.RepeatHelloRequest.serializeBinaryToWriter = function(message, writer) {
+proto.helloworld.RepeatHelloRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getName();
   if (f.length > 0) {
@@ -466,7 +467,7 @@ proto.helloworld.RepeatHelloRequest.serializeBinaryToWriter = function(message, 
  * optional string name = 1;
  * @return {string}
  */
-proto.helloworld.RepeatHelloRequest.prototype.getName = function() {
+proto.helloworld.RepeatHelloRequest.prototype.getName = function () {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
@@ -475,7 +476,7 @@ proto.helloworld.RepeatHelloRequest.prototype.getName = function() {
  * @param {string} value
  * @return {!proto.helloworld.RepeatHelloRequest} returns this
  */
-proto.helloworld.RepeatHelloRequest.prototype.setName = function(value) {
+proto.helloworld.RepeatHelloRequest.prototype.setName = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
@@ -484,7 +485,7 @@ proto.helloworld.RepeatHelloRequest.prototype.setName = function(value) {
  * optional int32 count = 2;
  * @return {number}
  */
-proto.helloworld.RepeatHelloRequest.prototype.getCount = function() {
+proto.helloworld.RepeatHelloRequest.prototype.getCount = function () {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
@@ -493,7 +494,7 @@ proto.helloworld.RepeatHelloRequest.prototype.getCount = function() {
  * @param {number} value
  * @return {!proto.helloworld.RepeatHelloRequest} returns this
  */
-proto.helloworld.RepeatHelloRequest.prototype.setCount = function(value) {
+proto.helloworld.RepeatHelloRequest.prototype.setCount = function (value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
 

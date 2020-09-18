@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  envoy:
+    container_name: envoy-proxy
+    image: envoyproxy/envoy:v1.15.0
+    ports:
+      - 8080:8080
+      - 9901:9901
+    volumes:
+      - ./frontend/envoy.yaml:/etc/envoy/envoy.yaml:ro
+    networks:
+      - frontend-network
+
+  app:
+    container_name: app_frontend
+    ports:
+      - 3000:3000
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/usr/src/app
+      - /usr/src/app/node_modules
+    networks:
+      - frontend-network
+
+  server:
+    container_name: app_backend
+    ports:
+      - 9090:9090
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    volumes:
+      - ./backend:/usr/src/app
+      - /usr/src/app/node_modules
+
+networks:
+  frontend-network:
+    driver: bridge

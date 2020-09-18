@@ -1,15 +1,20 @@
-FROM node:12
+FROM mhart/alpine-node:12
 
 # Create app directory
-WORKDIR /usr/src/app
+RUN mkdir -p /src/app
+WORKDIR /src/app
 
-# Installing dependencies
-COPY package*.json /usr/src/app
+# to make npm test run only once non-interactively
+ENV CI=true
+
+# Install app dependencies
+COPY package.json /src/app/
 RUN npm install
 
-# Copying source files
-COPY . /usr/src/app
+# Bundle app source
+COPY . /src/app
 
 EXPOSE 3000
-# Running the app
-CMD ["npm", "start"]
+
+# defined in package.json
+CMD [ "npm", "run", "start" ]
